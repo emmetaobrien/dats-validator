@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/giuly/Documents/NeuroHub/dats_validator/venv"
+VIRTUAL_ENV="/home/giuly/Documents/NeuroHub/dats-validator/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

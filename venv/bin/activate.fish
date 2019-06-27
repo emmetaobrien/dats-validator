@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/giuly/Documents/NeuroHub/dats_validator/venv"
+set -gx VIRTUAL_ENV "/home/giuly/Documents/NeuroHub/dats-validator/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
