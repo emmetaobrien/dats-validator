@@ -5,60 +5,60 @@
 # 4) run generic JSON-LD extractor on dats-descriptor.json and see how it behaves
 # 5) investigate on how this/extracted content impacts the search when you want to quary some fileds form the extracted content
 
-
-import os.path as op
 import logging
+import os.path as op
 import dats.dats_model as dats_model
 from datalad_metalad.extractors.custom import CustomMetadataExtractor
 from rdflib import Graph
 from datalad.api import install
-from datalad.api import add
 import tempfile
 import os
 import shutil
-from subprocess import call
 
 
-def install_dataset():
-    print("IM AM IN")
-    data_dir = tempfile.mkdtemp()
+def process_dataset():
+    path = tempfile.mkdtemp()
     try:
-        dataset = install(data_dir, "///openfmri/ds000164")  # visual-working-mem: "///openneuro/ds001634"
+        # Installation of the visual-working-memory dataset
+        dataset = install(path, "///openneuro/ds001634")  # can try other datasets as well, "///openfmri/ds000164"
     except Exception as e:
-        logging.error("Failed to install dataset: " + str(e))
+        logging.error('Failed to install dataset: ' + str(e))
     else:
-        try:
-            print("ok")
-            # extract_dats_meta(dataset, data_dir)
-        except Exception as e:
-            logging.error("Failed to get dataset content: " + str(e))
+        logging.info('\n')
+        logging.info('Successfully installed\n')
+        extract_dats_meta(dataset, path)
 
 
-def extract_dats_meta(ds, data_dir):
+def extract_dats_meta(ds, path):
 
     """ Validates DATS JSON schemas and the DATS JSON instances against the schemas
-    :param ds:
-    :param path: path to json-ld file
-    :return:
+    :param ds: dataset
+    :param path: dataset path
     """
 
-    # if op.exists(op.join(data_dir, "dataset.json")):
-    #     if dats_model.validate_schema(data_dir, "dataset.json"):
-    #         run_extractor(ds, op.join(data_dir, "dataset.json"))
-    #     else:
-    #         logging.error("Failed to validate dataset.json")
-    #
-    # else:
+    # The DATS based dataset description is still not part of the dataset, so we will go ahead and add it
 
-    path = os.path.join(data_dir, ".metadata")
-    json_path = op.join(op.dirname(__file__), 'dataset.json')
+    json_file = 'dataset.json'
+    # create a path to the .metadata directory
+    path = os.path.join(path, ".metadata")
+    os.mkdir(path)
+    # add path to dataset(may not need it)
+    ds.add(path)
+    # get current path for the dataset.json DATS file
+    json_path = op.join(op.dirname(__file__), json_file)
+    # copy current json file to .metadata directory
     new_jason_path = shutil.copy(json_path, path)
+    # add new json file path to the dataset
     ds.add(new_jason_path)
-    run_extractor(ds)
+    if dats_model.validate_schema(op.dirname(new_jason_path), json_file):
+        logging.info(json_file + ' validation went OK\n')
+        return run_extractor(ds)
+    else:
+        logging.error('Validation was not successful')
+        return []
 
-    return []
 
-
+# The validate_dats_graph function is a possible addition to validate dats by graph
 def validate_dats_graph(path):
     with open(path, "r") as j:
         dats_agr = j.read()
@@ -69,12 +69,12 @@ def validate_dats_graph(path):
 
 
 def run_extractor(ds):
-    # run extractor
+    # run datalad-metalad custom extractor for json-ld files
+    logging.info('Running custom jason-ld extractor \n')
     c = CustomMetadataExtractor()
-    if ds.is_installed():
-        content = c.get_required_content(ds, process_type="dataset", status=["ok"])
-
+    content = c.get_required_content(ds, process_type="dataset", status=["ok"])
+    logging.info('Content extracted \n')
     return content
 
 
-install_dataset()
+process_dataset()

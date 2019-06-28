@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95c7a6a5-bead-405f-8d6c-ae66d8cb9c4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dats/dataset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dats-extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/dats-extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dats/custom-extractor-test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dats/dats-validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/dats/dats-validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dats/descriptor-dats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-dats-extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/test-dats-extractor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +50,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dats/dats-validator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+            <state relative-caret-position="651">
+              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+              <folding>
+                <element signature="e#304#318#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,12 +277,12 @@
       <workItem from="1560432473716" duration="11266000" />
       <workItem from="1561037749999" duration="599000" />
       <workItem from="1561055640657" duration="25547000" />
-      <workItem from="1561142428871" duration="30013000" />
+      <workItem from="1561142428871" duration="34588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81490000" />
+    <option name="totallyTimeSpent" value="86065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="130" y="38" width="1657" height="1042" extended-state="0" />
@@ -474,8 +471,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dats/dats-validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+        <state relative-caret-position="651">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+          <folding>
+            <element signature="e#304#318#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
