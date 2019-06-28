@@ -40,7 +40,7 @@ class MetadataExtractor(BaseMetadataExtractor):
 
     def get_metadata(self, dataset, content = False):
 
-        self.path = "./descriptor-dats.json"  # temporary
+        self.path = "./dataset.json"  # temporary
         try:
             exists(self.path)
         except FileNotFoundError:

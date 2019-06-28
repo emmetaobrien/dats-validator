@@ -12,26 +12,29 @@ import dats.dats_model as dats_model
 from datalad_metalad.extractors.custom import CustomMetadataExtractor
 from rdflib import Graph
 from datalad.api import install
+from datalad.api import add
 import tempfile
 import os
+import shutil
 from subprocess import call
 
 
-
 def install_dataset():
+    print("IM AM IN")
     data_dir = tempfile.mkdtemp()
     try:
-        dataset = install(data_dir, "///openfmri/ds000164")
+        dataset = install(data_dir, "///openfmri/ds000164")  # visual-working-mem: "///openneuro/ds001634"
     except Exception as e:
         logging.error("Failed to install dataset: " + str(e))
     else:
         try:
-            dataset.get("sub-001/func/")
+            print("ok")
+            # extract_dats_meta(dataset, data_dir)
         except Exception as e:
             logging.error("Failed to get dataset content: " + str(e))
 
 
-def validate_dats(ds, data_dir):
+def extract_dats_meta(ds, data_dir):
 
     """ Validates DATS JSON schemas and the DATS JSON instances against the schemas
     :param ds:
@@ -39,11 +42,19 @@ def validate_dats(ds, data_dir):
     :return:
     """
 
-    datspath = op.join(data_dir, "descriptor-dats.json")
-    if op.exists(datspath):
-        dats_model.validate_schema(datspath)
-    else:
-        dats_model.validate_schema(op.dirname(__file__), 'descriptor-dats.json')
+    # if op.exists(op.join(data_dir, "dataset.json")):
+    #     if dats_model.validate_schema(data_dir, "dataset.json"):
+    #         run_extractor(ds, op.join(data_dir, "dataset.json"))
+    #     else:
+    #         logging.error("Failed to validate dataset.json")
+    #
+    # else:
+
+    path = os.path.join(data_dir, ".metadata")
+    json_path = op.join(op.dirname(__file__), 'dataset.json')
+    new_jason_path = shutil.copy(json_path, path)
+    ds.add(new_jason_path)
+    run_extractor(ds)
 
     return []
 
@@ -66,4 +77,4 @@ def run_extractor(ds):
     return content
 
 
-search_dataset()
+install_dataset()

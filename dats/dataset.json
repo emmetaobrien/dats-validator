@@ -1,0 +1,151 @@
+{
+    "$schema": "https://w3id.org/dats/schema/dataset_schema.json",
+    "@type": "Dataset",
+    "title": "Visual working memory: Study of Task fMRI and Behavioural respons",
+    "description" : "Nineteen right-handed healthy adults (aged from 18-28 years old) participated in this study on the same 3 T MRI scanner. Axial 3D T1-weighted images were acquired as well as three runs of bold task MRI with the recording of their related behavorial data.",
+    "indentifier": {
+        "@type": "Identifier",
+        "identifier": "10.18112/openneuro.ds001634.v1.0.1",
+        "identifierSource": "https://www.doi.org/"
+    },
+    "creators": [
+        {
+            "$schema": "https://w3id.org/dats/schema/person_schema.json",
+            "@type": "Person",
+            "fullName": "Eyal Soreq",
+            "firstName": "Eyal",
+            "lastName": "Soreq",
+            "affiliations": [
+                 {
+                    "$schema": "https://w3id.org/dats/schema/organization_schema.json",
+                    "@type": "Organization",
+                    "name": "The Computational, Cognitive and Clinical Neuroimaging Laboratory, Division of Brain Sciences"
+                }
+            ]
+        },
+        {
+            "$schema": "https://w3id.org/dats/schema/person_schema.json",
+            "@type": "Person",
+            "fullName": "Adam Hampshire",
+            "firstName": "Adam",
+            "lastName": "Hampshire",
+            "affiliations": [
+                 {
+                    "$schema": "https://w3id.org/dats/schema/organization_schema.json",
+                    "@type": "Organization",
+                    "name": "The Computational, Cognitive and Clinical Neuroimaging Laboratory, Division of Brain Sciences"
+                }
+            ]
+        }
+    ],
+    "storedIn": {
+            "identifier": "CONP open data",
+            "name": "CONP",
+            "access": {}
+        },
+    "types": [
+        {
+            "$schema": "https://w3id.org/dats/schema/data_type_schema.json",
+            "@type": "DataType",
+            "information": {
+                "$schema": "https://w3id.org/dats/schema/annotation_schema.json",
+                "@type": "Annotation",
+                "value": "MRI",
+                "valueIRI": ""
+            }
+        },
+        {
+            "$schema": "https://w3id.org/dats/schema/data_type_schema.json",
+            "@type": "DataType",
+            "information": {
+                "$schema": "https://w3id.org/dats/schema/annotation_schema.json",
+                "@type": "Annotation",
+                "value": "Task fMRI",
+                "valueIRI": ""
+            }
+        },
+        {
+            "$schema": "https://w3id.org/dats/schema/data_type_schema.json",
+            "@type": "DataType",
+            "information": {
+                "$schema": "https://w3id.org/dats/schema/annotation_schema.json",
+                "@type": "Annotation",
+                "value": "Behavioral Response",
+                "valueIRI": ""
+            }
+        },
+        {
+            "$schema": "https://w3id.org/dats/schema/data_type_schema.json",
+            "@type": "DataType",
+            "information": {
+                "$schema": "https://w3id.org/dats/schema/annotation_schema.json",
+                "@type": "Annotation",
+                "value": "Visual Working Memory (WM)",
+                "valueIRI": ""
+            }
+        }
+    ],
+    "availability": "available; available with restriction",
+    "privacy": "Open Access; Registered Access",
+    "licenses": [
+        {
+            "$schema": "https://w3id.org/dats/schema/license_schema.json",
+            "@type": "Licence",
+            "dataUsesConditions": {
+                "value": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+            }
+        }
+    ],
+    "primaryPublications": [
+        {
+            "$schema": "https://w3id.org/dats/schema/publication_schema.json",
+            "@type": "Publication",
+            "title": "Dynamic network coding of working-memory domains and working-memory processes",
+            "publicationVenue": "Nature Communications, (2019)10:936",
+            "authors": [
+                {
+                    "$schema": "https://w3id.org/dats/schema/person_schema.json",
+                    "@type": "Person",
+                    "fullName": "Eyal Soreq",
+                    "firstName": "Eyal",
+                    "lastName": "Soreq",
+                    "affiliations": [
+                         {
+                            "$schema": "https://w3id.org/dats/schema/organization_schema.json",
+                            "@type": "Organization",
+                            "name": "The Computational, Cognitive and Clinical Neuroimaging Laboratory, Division of Brain Sciences"
+                        }
+                    ]
+                },
+                {
+                    "$schema": "https://w3id.org/dats/schema/person_schema.json",
+                    "@type": "Person",
+                    "fullName": "Robert Leech",
+                    "firstName": "Robert",
+                    "lastName": "Leech",
+                    "affiliations": [
+                         {
+                            "$schema": "https://w3id.org/dats/schema/organization_schema.json",
+                            "@type": "Organization",
+                            "name": "Centre for Neuroimaging Sciences, Institute of Psychiatry"
+                        }
+                    ]
+                },
+                {
+                    "$schema": "https://w3id.org/dats/schema/person_schema.json",
+                    "@type": "Person",
+                    "fullName": "Adam Hampshire",
+                    "firstName": "Adam",
+                    "lastName": "Hampshire",
+                    "affiliations": [
+                         {
+                            "$schema": "https://w3id.org/dats/schema/organization_schema.json",
+                            "@type": "Organization",
+                            "name": "The Computational, Cognitive and Clinical Neuroimaging Laboratory, Division of Brain Sciences"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
