@@ -1,1 +1,3 @@
-dats-tools==0.1
+datalad==0.12.0rc4
+rdflib==4.2.2
+datalad_metalad==0.2.0
