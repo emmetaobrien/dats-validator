@@ -14,8 +14,8 @@ These instructions will get you a copy of the application up and running on your
 
 Create a virtual environment and install dependencies
 
-`python3 -m venv venv`
-`source venv/bin/activate`
+`python3 -m venv venv` \
+`source venv/bin/activate` \
 `pip install -r requirements.txt`
 
 ### Run Application
