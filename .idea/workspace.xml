@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95c7a6a5-bead-405f-8d6c-ae66d8cb9c4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dats/content-checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dats/dats-validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/dats/dats-validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dats/content-checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/dats/content-checker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,10 +47,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dats/content-checker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="626">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
               <folding>
-                <element signature="e#357#368#0" expanded="true" />
+                <element signature="e#356#362#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,8 +152,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="38" />
+    <option name="x" value="-14" />
+    <option name="y" value="43" />
     <option name="width" value="1853" />
     <option name="height" value="1042" />
   </component>
@@ -305,15 +299,15 @@
       <workItem from="1561142428871" duration="35611000" />
       <workItem from="1563468767945" duration="3492000" />
       <workItem from="1564062796652" duration="4028000" />
-      <workItem from="1564148127858" duration="1893000" />
+      <workItem from="1564148127858" duration="3852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96501000" />
+    <option name="totallyTimeSpent" value="98460000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="38" width="1853" height="1042" extended-state="0" />
+    <frame x="-14" y="43" width="1853" height="1042" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2711677" />
@@ -503,10 +497,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dats/content-checker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="626">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
           <folding>
-            <element signature="e#357#368#0" expanded="true" />
+            <element signature="e#356#362#0" expanded="true" />
           </folding>
         </state>
       </provider>
