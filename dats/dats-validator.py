@@ -1,9 +1,9 @@
 #TODO:
 # 1) install dataset
-# 2) look for dats-descriptor.json file
+# 2) look for dats.json file
 # 3) validate dats model
-# 4) run generic JSON-LD extractor on dats-descriptor.json and see how it behaves
-# 5) investigate on how this/extracted content impacts the search when you want to quary some fileds form the extracted content
+# 4) run generic JSON-LD extractor on dats.json and see how it behaves
+# 5) investigate on how this/extracted content impacts the search when you want to quary some fileds from the extracted content
 
 import logging
 import os.path as op
@@ -78,3 +78,16 @@ def run_extractor(ds):
 
 
 process_dataset()
+
+
+# This will need to be added to the dataset tests in tests/functions.py
+# ...
+# if "dats.json" not in file_names:
+#         return "Dataset " + full_dir + " doesn't contain dats.json in its root directory"
+# else validate(ful_dir)
+#
+# def validate(dirs):
+#       file = "dats.json"
+#       if not dats_model.validate_schema(dir, file):
+#           return "Invalid " + file
+#       return "Validation of " + file + " went OK"
